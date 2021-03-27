@@ -1,4 +1,4 @@
-package fr.thesmyler.modtemplate;
+package fr.thesmyler.btedscrchprsc;
 
 import org.apache.logging.log4j.Logger;
 
@@ -8,11 +8,11 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid = ModTemplate.MODID, name = ModTemplate.NAME, useMetadata = true)
-public class ModTemplate
+@Mod(modid = BteDscRchPrsMod.MODID, name = BteDscRchPrsMod.NAME, useMetadata = true)
+public class BteDscRchPrsMod
 {
-    public static final String MODID = "modtemplate";
-    public static final String NAME = "Mod Template";
+    public static final String MODID = "btedscrchprsc";
+    public static final String NAME = "BTE Discord Rich Presence";
     private static String version;
 
     private static Logger logger;

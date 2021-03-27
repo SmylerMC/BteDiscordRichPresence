@@ -1,8 +1,8 @@
 [
 {
-  "modid": "modtemplate",
-  "name": "Mod template",
-  "description": "Mod template",
+  "modid": "btedscrchprsc",
+  "name": "BTE Discord rich presence",
+  "description": "Control what the BTE Discord rich presence mod shows when players are on your server",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",
