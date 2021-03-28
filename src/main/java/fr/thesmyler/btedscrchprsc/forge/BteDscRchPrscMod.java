@@ -3,6 +3,7 @@ package fr.thesmyler.btedscrchprsc.forge;
 import org.apache.logging.log4j.Logger;
 
 import fr.thesmyler.btedscrchprsc.common.Constants;
+import fr.thesmyler.btedscrchprsc.common.Formatting;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
@@ -16,8 +17,8 @@ import net.minecraftforge.fml.common.network.NetworkRegistry;
 import net.minecraftforge.fml.common.network.simpleimpl.SimpleNetworkWrapper;
 import net.minecraftforge.fml.relauncher.Side;
 
-@Mod(modid = BteDscRchPrsMod.MODID, name = BteDscRchPrsMod.NAME, useMetadata = true, acceptableRemoteVersions = "*")
-public class BteDscRchPrsMod {
+@Mod(modid = BteDscRchPrscMod.MODID, name = BteDscRchPrscMod.NAME, useMetadata = true, acceptableRemoteVersions = "*")
+public class BteDscRchPrscMod {
 	
     public static final String MODID = "btedscrchprsc";
     public static final String NAME = "BTE Discord Rich Presence";
@@ -46,7 +47,8 @@ public class BteDscRchPrsMod {
     
     @SubscribeEvent
     public void onPlayerJoin(PlayerLoggedInEvent event) {
-    	CHANNEL.sendTo(new BteDscForgePacket("TEST"), (EntityPlayerMP) event.player); //FIXME Do not hard code status
+    	String status = Formatting.formatStatus(BteDscRchPrscModConfig.pattern, event.player.world.getMinecraftServer().getServerHostname(), event.player.getDisplayNameString());
+    	CHANNEL.sendTo(new BteDscForgePacket(status), (EntityPlayerMP) event.player);
     }
     
     public static String version() {

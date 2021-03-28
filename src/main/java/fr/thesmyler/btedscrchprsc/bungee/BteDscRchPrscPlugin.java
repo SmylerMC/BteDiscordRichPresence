@@ -8,7 +8,7 @@ import net.md_5.bungee.api.plugin.Listener;
 import net.md_5.bungee.api.plugin.Plugin;
 import net.md_5.bungee.event.EventHandler;
 
-public class BteDscRchPrsPlugin extends Plugin implements Listener {
+public class BteDscRchPrscPlugin extends Plugin implements Listener {
 	
 	private ForgeChannel channel;
 
