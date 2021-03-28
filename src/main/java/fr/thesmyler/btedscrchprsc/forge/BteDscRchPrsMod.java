@@ -1,4 +1,4 @@
-package fr.thesmyler.btedscrchprsc.mod;
+package fr.thesmyler.btedscrchprsc.forge;
 
 import org.apache.logging.log4j.Logger;
 

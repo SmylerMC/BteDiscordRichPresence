@@ -1,4 +1,4 @@
-package fr.thesmyler.btedscrchprsc.mod;
+package fr.thesmyler.btedscrchprsc.forge;
 
 import fr.thesmyler.btedscrchprsc.common.BteDscRichPresencePacket;
 import io.netty.buffer.ByteBuf;

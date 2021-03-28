@@ -1,0 +1,5 @@
+name: BteDiscordRichPresence
+main: fr.thesmyler.btedscrchprsc.bungee.BteDscRchPrsPlugin
+version: ${version}
+author: SmylerMC
+depends: [Bungee2ForgeChannels]
