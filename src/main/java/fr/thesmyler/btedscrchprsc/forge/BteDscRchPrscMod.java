@@ -17,7 +17,7 @@ import net.minecraftforge.fml.common.network.NetworkRegistry;
 import net.minecraftforge.fml.common.network.simpleimpl.SimpleNetworkWrapper;
 import net.minecraftforge.fml.relauncher.Side;
 
-@Mod(modid = BteDscRchPrscMod.MODID, name = BteDscRchPrscMod.NAME, useMetadata = true, acceptableRemoteVersions = "*")
+@Mod(modid = BteDscRchPrscMod.MODID, name = BteDscRchPrscMod.NAME, useMetadata = true, acceptableRemoteVersions = "*", serverSideOnly = true)
 public class BteDscRchPrscMod {
 	
     public static final String MODID = "btedscrchprsc";
